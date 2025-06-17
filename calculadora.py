@@ -9,7 +9,7 @@ if __name__ == "__main__":
   print("Escolha a operação:")
   print("1 - Soma")
   print("2 - Subtração")
-  operacao = input("Digite o número da operação desejada: ")
+  operacao = int(input("Digite o número da operação desejada: "))
   
   x = int(input("Digite o primeiro número:"))
   y = int(input("Digite o segundo número:"))
