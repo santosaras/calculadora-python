@@ -16,9 +16,9 @@ if __name__ == "__main__":
 
   if operacao == 1:
     resultado = somar(x,y)
-    print("Resultado da soma é: {resultado}")
+    print(f"Resultado da soma é: {resultado}")
   elif operacao == 2:
     resultado = subtrair(x,y)
-    print("Resultado da subtração é: {resultado}")
+    print(f"Resultado da subtração é: {resultado}")
   else:
     print("Operação inválida!")
