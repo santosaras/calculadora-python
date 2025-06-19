@@ -3,22 +3,28 @@ def somar (numero_1, numero_2):
   
 def subtrair (numero_1,numero_2):
   return numero_1 - numero_2
-  
-if __name__ == "__main__":
-  print("Calculadora Simples")
-  print("Escolha a operação: ")
-  print("1 - Soma")
-  print("2 - Subtração")
-  operacao = int(input("Digite o número da operação desejada: "))
-  
-  numero_1 = int(input("Digite o primeiro número: "))
-  numero_2 = int(input("Digite o segundo número: "))
 
-  if operacao == 1:
-    resultado = somar(numero_1,numero_2)
-    print(f"Resultado da soma é: {resultado}")
-  elif operacao == 2:
-    resultado = subtrair(numero_1,numero_2)
-    print(f"Resultado da subtração é: {resultado}")
-  else:
-    print("Operação inválida!")
+def menu():
+  while True:
+      print("\nEscolha uma opção:")
+      print("1. Somar")
+      print("2. Subtrair")
+      print("3. Sair")
+      opcao = int(input("Digite o número da opção: "))
+
+      if opcao == 1:
+          numero_1 = int(input("Digite o primeiro número: "))
+          numero_2 = int(input("Digite o segundo número: "))
+          print(f"Resultado da soma é: {somar(numero_1, numero_2)}")
+      elif opcao== 2:
+          numero_1 = int(input("Digite o primeiro número: "))
+          numero_2 = int(input("Digite o segundo número: "))
+          print(f"Resultado da soma é: {subtrair(numero_1, numero_2)}")
+      elif opcao == 3:  
+          print("Saindo do programa.")
+          break
+      else:
+          print("Operação inválida!")
+
+if __name__ == "__main__":
+   menu()
